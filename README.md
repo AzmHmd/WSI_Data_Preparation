@@ -1,1 +1,1 @@
-# readWSI
+# Prepare dataset for WSI analysis
