@@ -1,4 +1,6 @@
-!print("Hello World")
+!print("Hello Git")
 !git add AnnotationExtractionMatlabCode
-!git commit -m "added AnnotationExtractionMatlabCode"
+!git add PolyscopeSDK
+!git add readCZIdata
+!git commit -m "added readCZIdata"
 !git push
