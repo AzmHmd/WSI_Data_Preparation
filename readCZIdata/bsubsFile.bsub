@@ -1,0 +1,50 @@
+#BSUB -J "CZITile[1-4]"
+#BSUB -P DMPYXYABE
+#BSUB -W 100
+#BSUB -o EO/CZITile.output.%J
+#BSUB -e EO/CZITile.errors.%J
+#BSUB -n 8
+#BSUB -M 10000
+#BSUB -q normal
+#BSUB -R "span[hosts=1]"
+#BSUB -N
+module load java/sun8/1.8.0u66
+module load anaconda/3
+export DISPLAY=""
+
+nJobs=4
+inResolution=0.11
+outResolution=0.11
+resLevel=1
+subBlockSize=(500 500)
+sharpSettings=(2.5 2)
+
+thumbWidth=1024
+ss1Magnification=1.25
+
+imageDir="/home/ahamidinekoo/HE/raw/"
+
+for imagePATH in "$imageDir"/*.czi; do
+imageName=$(basename "$imagePATH")
+tilePATH="/home/ahamidinekoo/HE/cws/$imageName"
+
+jarPATH="/scratch/DMP/EVGENMOD/ntrahearn/lib"
+codePATH="/scratch/DMP/EVGENMOD/ntrahearn/Code/CZITiles"
+
+CLASSPATH="$CLASSPATH":"$jarPATH"/CZIReader.jar:"$jarPATH"/loci_tools.jar:"$jarPATH"/OpenCV/opencv/build/bin/opencv-401.jar:"$codePATH"
+
+export tilePATH imagePATH CLASSPATH
+
+
+if [ $LSB_JOBINDEX = 1 ]
+then
+java GenerateCZITileMetadata -r $resLevel -i $inResolution -o $outResolution -w $thumbWidth -m $ss1Magnification -f "$tilePATH" "$imagePATH" 
+python "$codePATH"/writeParamP.py "$tilePATH"/param.txt "$tilePATH"/param.p
+rm "$tilePATH"/param.txt
+else
+java -Djava.awt.headless=true GenerateCZITiles -r $resLevel -s ${subBlockSize[@]} -p -q $((LSB_JOBINDEX-2)) $((nJobs-1)) -i $inResolution -o $outResolution -u ${sharpSettings[@]} -f "$tilePATH" "$imagePATH"
+fi
+done
+
+
+
