@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51a107da-081e-4761-a7ae-a0607a698fc4" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/download_annotations_from_url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Classifier/ExtractClassifierPatches.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="111" column="100" selection-start-line="111" selection-start-column="100" selection-end-line="111" selection-end-column="100" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate_celllabels_from_polyscope.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IHC_cell_labels.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IHC_cell_labels_original.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HE11class_cell_labels.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HEWhite.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>input_dir</find>
+      <find>20190117</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>images_input_dir</replace>
+      <replace>20190128</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/training.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/training_main.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/ClassifierModel.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/TrainClassifierModel.py" />
+        <option value="$PROJECT_DIR$/generate_rectangluar_labels.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/extract_rectangular_annotations.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/SplitTrainValid.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/ExtarctTrainPatchesFromRect.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/ExtarctTrainPatchesFromRect_V1.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/CellClassification.py" />
+        <option value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/create_imdb.py" />
+        <option value="F:/Multiplex-immunohistochemistry/Code/Cell-classification_V1/ExtractClassifierPatches.py" />
+        <option value="$PROJECT_DIR$/download_annotations_from_url.py" />
+        <option value="$PROJECT_DIR$/../20190204_Generate_cws/generate_cws_POETIC_IHC.py" />
+        <option value="$PROJECT_DIR$/generate_celllabels_from_polyscope.py" />
+        <option value="$PROJECT_DIR$/IHC_cell_labels.txt" />
+        <option value="$PROJECT_DIR$/../Classifier/ExtractClassifierPatches.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-311" />
+    <option name="y" value="-28" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PolyscopeSDK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PolyscopeSDK" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="T:/COPAINGE/fsobhani/Data-prep/code/Classifier" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.generate_celllabels_from_polyscope">
+    <configuration name="ExtractClassifierPatches" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="20180802-PolyscopeSDK" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="F:/Multiplex-immunohistochemistry/Code/Cell-classification_V1" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:/Multiplex-immunohistochemistry/Code/Cell-classification_V1/ExtractClassifierPatches.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_imdb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Preprocessing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/create_imdb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="download_annotations_from_url" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="20180802-PolyscopeSDK" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/download_annotations_from_url.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_celllabels_from_polyscope" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="20180802-PolyscopeSDK" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_celllabels_from_polyscope.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_cws_POETIC_IHC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="model and training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../20190204_Generate_cws" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../20190204_Generate_cws/generate_cws_POETIC_IHC.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ExtractClassifierPatches" />
+      <item itemvalue="Python.create_imdb" />
+      <item itemvalue="Python.download_annotations_from_url" />
+      <item itemvalue="Python.generate_celllabels_from_polyscope" />
+      <item itemvalue="Python.generate_cws_POETIC_IHC" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.generate_celllabels_from_polyscope" />
+        <item itemvalue="Python.generate_cws_POETIC_IHC" />
+        <item itemvalue="Python.download_annotations_from_url" />
+        <item itemvalue="Python.ExtractClassifierPatches" />
+        <item itemvalue="Python.create_imdb" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51a107da-081e-4761-a7ae-a0607a698fc4" name="Default Changelist" comment="" />
+      <created>1542371708717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542371708717</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1849315" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3206934" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3900325" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.45765027" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/subpackages/polyscope_dots_to_labels.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/subpackages/polyscope_dots_to_labels.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/TrainClassifierModel.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/subpackages/polyscope_dots_to_labels.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>file.write('fdfjkdlfj')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>file.write(configs)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.path_to_param</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>annotation_files[i]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pathlib.Path(annotations_dir).glob('*.txt')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/generate_annotations_txt.py" />
+    <entry file="file://$PROJECT_DIR$/annotations-orig.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_labels_freehand.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Copy_files_for_annotations.m" />
+    <entry file="file://$PROJECT_DIR$/class_labels_rect_tumourmarking.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/python36/lib/python3.6/pathlib.py" />
+    <entry file="file://$PROJECT_DIR$/subpackages/txt_to_df.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PolyscopeSDK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/ClassifierModel.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/resume_train.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/CellDetection.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/ExtarctTrainPatchesFromRect_V1.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/CellClassification.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/training_main.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/TrainClassifierModel.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/ExtarctTrainPatchesFromRect.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/create_imdb.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/AnnotateCell.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/extract_rectangular_annotations.py" />
+    <entry file="file://F:/gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/SplitTrainValid.py" />
+    <entry file="file://F:/Multiplex-immunohistochemistry/Code/Cell-classification_V1/ExtractClassifierPatches.py" />
+    <entry file="file://F:/Multiplex-immunohistochemistry/Code/Cell-detection-clountloss/Data-preparation/GetPolyscoperectangles.py" />
+    <entry file="file://F:/Multiplex-immunohistochemistry/Code/Cell-detection-clountloss/Data-preparation/SplitTrainValid.py" />
+    <entry file="file://$PROJECT_DIR$/class_labels_rect.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Multiplex-immunohistochemistry/Code/Cell-detection-clountloss/Data-preparation/ExtarctTrainPatchesFromRect.py" />
+    <entry file="file://F:/Multiplex-immunohistochemistry/Code/Cell-detection-clountloss/training_general_V4.py" />
+    <entry file="file://F:/Multiplex-immunohistochemistry/Code/Cell-detection-clountloss/Data-preparation/create_imdb.py" />
+    <entry file="file://$PROJECT_DIR$/generate_rectangluar_labels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subpackages/polyscope_dots_to_labels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../20190204_Generate_cws/generate_cws_POETIC_IHC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IHCTTF1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IHC_cell_labels_original.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HE11class_cell_labels.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HEWhite.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IHC_cell_labels.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_celllabels_from_polyscope.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download_annotations_from_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Classifier/ExtractClassifierPatches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="111" column="100" selection-start-line="111" selection-start-column="100" selection-end-line="111" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

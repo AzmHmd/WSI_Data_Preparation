@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/20180802-PolyscopeSDK.iml" filepath="$PROJECT_DIR$/.idea/20180802-PolyscopeSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Multiplex-immunohistochemistry/Code/Cell-detection-clountloss/.idea/Cell-detection.iml" filepath="$PROJECT_DIR$/../../Multiplex-immunohistochemistry/Code/Cell-detection-clountloss/.idea/Cell-detection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/.idea/Preprocessing.iml" filepath="$PROJECT_DIR$/../../gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/Preprocessing_1/.idea/Preprocessing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/.idea/model and training.iml" filepath="$PROJECT_DIR$/../../gDrive/Yeman/Projects/Multiplex immunohistochemistry/20181216/model and training_1/.idea/model and training.iml" />
+    </modules>
+  </component>
+</project>

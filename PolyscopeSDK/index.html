@@ -1,0 +1,190 @@
+<!--
+*   Author: Sebastian Schmittner
+*   Date:
+*   LastAuthor: Sebastian Schmittner
+*   LastDate: 2014.12.07 10:05:49 (+01:00)
+*   Version: 0.1.1
+*   Version Key: 1.9.0_Production-65-gcf96492026-dirty
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="/LogoPolyzoomer1.0fav.png">
+
+    <meta charset='utf-8'>
+
+    <title>ImageOmics Polyzoomer</title>
+
+    <link rel='stylesheet' 
+          type='text/css'
+          media='screen'
+          href='../css/style.css'/>
+
+
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/jquery-ui.min.css'/>
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/jquery-ui.structure.min.css'/>
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/jquery-ui.theme.min.css'/>
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui.min.js"></script>
+    <script type="test/javascript" src="../d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../sgbeal-colorpicker-20070712.jquery.js"></script>
+
+	<script type="text/javascript" src="../openseadragon.min.js"></script>
+    <script type="text/javascript" src="../openseadragon-svg-overlay.js"></script>
+    <!-- <script type="text/javascript" src="../polyzoomerAnnotations.js"></script> --!>
+    <script type="text/javascript" src="../openseadragon-viewerinputhook.min.js"></script>
+    <!-- <script type="text/javascript" src="../polyzoomerDrawAnnotations.js"></script> --!>
+    <script type="text/javascript" src="../polyzoomerPlugin.js"></script>
+
+    <script type="text/javascript" src="../openseadragon-scalebar.js"></script>
+    <script type="text/javascript" src="../scrollWidth.js"></script>
+
+    <!-- andreas.heindl@icr.ac.uk -->
+
+<script>
+
+
+    var viewer = null;
+    var Seadragon;
+    Seadragon = OpenSeadragon;
+    OpenSeadragon.Utils = OpenSeadragon;
+	
+function SyncImage(viewer, viewerToSyncWith) {
+	console.log('Syncing');
+	viewer.viewport.panTo(viewerToSyncWith.viewport.getCenter());
+	viewer.viewport.zoomTo(viewerToSyncWith.viewport.getZoom());
+}
+
+var hFuncHandler=function myHandler(inViewer) {
+    
+        var SourceViewer = inViewer.eventSource;
+	var viewersToSync = [];
+	
+	for (var key in ViewerHash) {
+		if (ViewerHash.hasOwnProperty(key)) {
+			if(key != SourceViewer.id) {
+				if(ViewerHash[key].id == SourceViewer.id) {
+					viewersToSync.push(key);
+				}
+			}
+		}
+	}
+	
+	console.log('Hashes for SourceViewer: ', viewersToSync);
+    
+	for(var viewer = 0; viewer < viewersToSync.length; ++viewer) {
+		TargetViewer = window[viewersToSync[viewer]];   
+		
+		if (!TargetViewer.isOpen()) {
+			console.log('TargetViewer is not open');
+		}
+
+		console.log('Starting live sync...', SourceViewer.id, ' with ', TargetViewer.id);
+		SyncImage(TargetViewer,SourceViewer)      
+		console.log('done');
+	}
+}
+  
+function LiveSync(SourceViewer) {
+  console.log('Attaching live sync handler to ',SourceViewer.id);
+  SourceViewer.addHandler("animation",hFuncHandler);
+}
+
+function UnLiveSync(SourceViewer) {
+  console.log('Removing handler from ',SourceViewer.id);
+  SourceViewer.removeHandler("animation",hFuncHandler)
+}
+
+function SyncThemAll()
+{//LiveSync(UNKNOWNPAT0001_UNKNOWNCHANNEL0001)
+}
+
+var currentMousePos = { x: -1, y: -1 };
+$(document).mousemove(function(event) {
+	currentMousePos.x = event.pageX;
+    currentMousePos.y = event.pageY;
+});
+	
+function rgbStringToHex(color) {
+
+	var colorArray = color.split("(")[1].split(")")[0];
+	colorArray = colorArray.split(",");
+	var b = colorArray.map(function(x){             //For each array element
+		x = parseInt(x).toString(16);      //Convert to a base16 string
+		return (x.length==1) ? "0"+x : x;  //Add zero if we get only one character
+	})
+	
+	return "#"+b.join("");
+}
+
+</script>
+</head>
+
+<body onload="SyncThemAll()">
+
+<div class="header">
+	<h1>Polyscope</h1>
+</div>
+
+<table border="1">
+ <tr>
+
+
+<td>
+2831_RMS.czideepzoom.dzi
+<div id="UNKNOWNPAT0001_UNKNOWNCHANNEL0001" class="openseadragon"></div>
+
+		<script type="text/javascript">
+		// Example
+		var UNKNOWNPAT0001_UNKNOWNCHANNEL0001 = OpenSeadragon({
+			id:              "UNKNOWNPAT0001_UNKNOWNCHANNEL0001",
+			prefixUrl:       "../images/",
+			tileSources:     "./_UNKNOWNCHANNEL0001/UNKNOWNPAT0001_UNKNOWNCHANNEL0001_2831_RMS.czideepzoom.dzi",
+			preserveViewport: true,
+			showRotationControl: true,
+			showNavigator: true
+		});
+	
+	UNKNOWNPAT0001_UNKNOWNCHANNEL0001.Annotations();
+	UNKNOWNPAT0001_UNKNOWNCHANNEL0001.DrawAnnotations(OpenSeadragon.ControlAnchor.BOTTOM_RIGHT);
+
+        var tileSource = "./_UNKNOWNCHANNEL0001/UNKNOWNPAT0001_UNKNOWNCHANNEL0001_2831_RMS.czideepzoom.dzi";
+        var isSvs = (tileSource.indexOf(".svsdeepzoom.dzi") != -1);
+        var isNdpi = (tileSource.indexOf(".ndpideepzoom.dzi") != -1); 
+
+        var ppm = 1000000 / 0.46;
+
+        if(isSvs){
+            ppm = 1000000 / 0.50;
+        }
+
+        if(isSvs || isNdpi){
+            UNKNOWNPAT0001_UNKNOWNCHANNEL0001.scalebar({
+                minWidth: "75px",
+                pixelsPerMeter: ppm,
+                barThickness: 2
+            });
+        }
+
+	var handleResize = function() {
+		var height = jQuery('#UNKNOWNPAT0001_UNKNOWNCHANNEL0001').height();
+		var couldHeight = jQuery('td.OSD').height() * 0.9;
+
+		if(height == 0) {
+			jQuery('#UNKNOWNPAT0001_UNKNOWNCHANNEL0001').height(couldHeight + 'px');
+		};
+	};
+
+	</script>
+</td>
+</tr>
+</table>
+<script type=text/javascript>
+var ViewerHash = new Object();
+
+//ViewerHash['UNKNOWNPAT0001_UNKNOWNCHANNEL0001'] = UNKNOWNPAT0001_UNKNOWNCHANNEL0001processed;
+</script>
+</body>
