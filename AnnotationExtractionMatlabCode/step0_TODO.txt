@@ -1,0 +1,8 @@
+cd(prefdir)
+edit javaclasspath.txt
+
+% add these lines and save
+% /home/azamhamidinekoo/Documents/dataset/readCZIdata/lib/CZIReader.jar
+% /home/azamhamidinekoo/Documents/dataset/readCZIdata/lib/loci_tools.jar
+
+javaclasspath

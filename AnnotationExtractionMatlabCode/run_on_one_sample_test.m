@@ -15,7 +15,7 @@ LabelMap = containers.Map('#00ff00','GreenLabels');
 
 
 % ExtractTilesPolyscope(ImagePath, AnnoPath, PatchPath, LabelMap);
-ExtractTilesPolyscope_version2(ImagePath, AnnoPath, PatchPath, LabelMap)
+ExtractTilesPolyscope_20x(ImagePath, AnnoPath, PatchPath, LabelMap)
 
 
 %%
