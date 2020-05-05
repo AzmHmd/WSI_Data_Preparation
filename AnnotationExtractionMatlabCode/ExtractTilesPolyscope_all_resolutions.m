@@ -131,7 +131,7 @@ for i=1:length(coords)
 %                 figure;imshow(tile1x)
                 imwrite(tile1x, strrep(imageTilePath,'10x','1x'));
                 
-                tile10x = imread_wsi(ImagePath, 'ReductionLevel', Resolution, 'PixelRegion',...
+                tile10x = imread_wsi(ImagePath, 'ReductionLevel', 2, 'PixelRegion',...
                     {[tilePosition(1)+1 tilePosition(1)+currentTileSize(1)], [tilePosition(2)+1 tilePosition(2)+currentTileSize(2)]});
 %                 figure;imshow(tile10x)
                 imwrite(tile10x, imageTilePath);
