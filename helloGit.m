@@ -3,4 +3,4 @@
 !git add PolyscopeSDK
 !git add readCZIdata
 !git commit -m "added readCZIdata"
-!git push
+!git puAzmHmd
