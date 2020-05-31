@@ -46,5 +46,5 @@ def run(url_csv):
 
 
 if __name__ == '__main__':
-    url_csv_path = 'list.csv'
+    url_csv_path = 'list_edit.csv'
     run(url_csv=url_csv_path)
