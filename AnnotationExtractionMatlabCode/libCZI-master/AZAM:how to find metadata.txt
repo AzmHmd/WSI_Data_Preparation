@@ -1,0 +1,9 @@
+how to find metadata
+
+So first I would download libCZI. It's an open source library made by Zeiss for processing CZI images. In principle you can extract anything you want from the file using this library, both image regions and metadata. However, if you want to avoid coding something up yourself, the library also contains a command line tool called CZIcmd. This can do a bunch of the obvious things you might want to do, which includes printing metadata. (edited) 
+5:45
+The following CZIcmd command will output the file's metadata as an XML file:
+./CZIcmd -c PrintInformation -s "Path/to/CZI/File.czi" -i "RawXML" > "Path/to/XML/File.xml"
+
+The scanner name will be listed under:
+ImageDocument -> Metadata -> Information -> Instrument -> Microscopes ->Microscope -> Name

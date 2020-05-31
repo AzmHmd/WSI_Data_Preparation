@@ -1,0 +1,14 @@
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/CMakeFiles/rebuild_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/CMakeFiles/edit_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/CMakeFiles/rebuild_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/CMakeFiles/edit_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/JxrDecode/CMakeFiles/rebuild_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/JxrDecode/CMakeFiles/JxrDecodeStatic.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/JxrDecode/CMakeFiles/edit_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/libCZI/CMakeFiles/rebuild_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/libCZI/CMakeFiles/edit_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/libCZI/CMakeFiles/libCZI.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/libCZI/CMakeFiles/libCZIStatic.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/CZICmd/CMakeFiles/rebuild_cache.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/CZICmd/CMakeFiles/CZIcmd.dir
+/home/azamhamidinekoo/Documents/dataset/AnnotationExtractionMatlabCode/libCZI-master/Src/CZICmd/CMakeFiles/edit_cache.dir

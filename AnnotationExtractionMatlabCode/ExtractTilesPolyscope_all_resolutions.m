@@ -125,7 +125,8 @@ for i=1:length(coords)
                 imageTilePath = fullfile(patchFolder, [num2str(u) '_' num2str(v) 'T.png']);
             end
             
-            if ~isfile(imageTilePath)
+            if ~isfile(imageTilePath) 
+%                tilePosition = tilePosition+[0 -50];
                 tile1x = imread_wsi(ImagePath, 'ReductionLevel', 3, 'PixelRegion',...
                     {[tilePosition(1)/2+1 tilePosition(1)/2+currentTileSize(1)/2], [tilePosition(2)/2+1 tilePosition(2)/2+currentTileSize(2)/2]});
 %                 figure;imshow(tile1x)
@@ -145,6 +146,7 @@ for i=1:length(coords)
                     {[4*tilePosition(1)+1 4*tilePosition(1)+4*currentTileSize(1)], [4*tilePosition(2)+1 4*tilePosition(2)+4*currentTileSize(2)]});
 %                 figure;imshow(tile40x)
                 imwrite(tile40x, strrep(imageTilePath,'10x','40x'));
+%                  tilePosition = tilePosition+[0 50];
             end
             
             annotationPosition = [[bounds{1}(1) bounds{2}(1)]-tilePosition+1; [bounds{1}(2) bounds{2}(2)]-tilePosition+1];
@@ -164,13 +166,14 @@ for i=1:length(coords)
                     mask = zeros(currentTileSize);
                     end
                 end
+
                 mask(annotationPosition(1, 1):annotationPosition(2, 1), annotationPosition(1, 2):annotationPosition(2, 2)) = max(mask(annotationPosition(1, 1):annotationPosition(2, 1), annotationPosition(1, 2):annotationPosition(2, 2)), subMask);
                 imwrite(mask, maskPath);
                 % Bilinear interpolation; the output pixel value is a weighted average of pixels in the nearest 2-by-2 neighborhood
                 imwrite(imresize(mask,.5,'bilinear'), strrep(maskPath,'10x','1x'));%
                 imwrite(imresize(mask,2,'bilinear'), strrep(maskPath,'10x','20x'));
                 imwrite(imresize(mask,4,'bilinear'), strrep(maskPath,'10x','40x'));
-            end
+%             end
         end
     end
     %end

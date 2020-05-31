@@ -122,7 +122,7 @@ for i=1:length(coords)
             if ~isfile(imageTilePath)
                 tile = imread_wsi(ImagePath, 'ReductionLevel', Resolution, 'PixelRegion',...
                     {[tilePosition(1)+1 tilePosition(1)+currentTileSize(1)], [tilePosition(2)+1 tilePosition(2)+currentTileSize(2)]});
-%                 figure;imshow(tile)
+                 figure;imshow(tile)
                 imwrite(tile, imageTilePath);
             end
             
@@ -140,6 +140,7 @@ for i=1:length(coords)
                     mask = zeros(currentTileSize);
                 end
                 mask(annotationPosition(1, 1):annotationPosition(2, 1), annotationPosition(1, 2):annotationPosition(2, 2)) = max(mask(annotationPosition(1, 1):annotationPosition(2, 1), annotationPosition(1, 2):annotationPosition(2, 2)), subMask);
+                figure;imshow(mask)
                 imwrite(mask, maskPath);
             end
         end

@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/JxrDecodeStatic.dir/JxrDecode.cpp.o"
+  "CMakeFiles/JxrDecodeStatic.dir/stdafx.cpp.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/adapthuff.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/decode.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/encode.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/image.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRGlue.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRGlueJxr.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRGluePFC.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRMeta.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRTest.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRTestBmp.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRTestHdr.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRTestPnm.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRTestTif.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRTestWrapper.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRTestYUV.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/JXRTranscode.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/perfTimerANSI.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/postprocess.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/segdec.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/segenc.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strcodec.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strdec.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strdec_x86.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strenc.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strenc_x86.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strFwdTransform.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strInvTransform.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strPredQuant.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strPredQuantDec.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strPredQuantEnc.c.o"
+  "CMakeFiles/JxrDecodeStatic.dir/Jxr/strTransform.c.o"
+  "libJxrDecodeStatic.pdb"
+  "libJxrDecodeStatic.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/JxrDecodeStatic.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
