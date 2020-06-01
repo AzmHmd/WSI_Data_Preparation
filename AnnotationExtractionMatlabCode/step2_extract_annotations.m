@@ -6,7 +6,7 @@ root = '/home/azamhamidinekoo/Documents/dataset/';
 
 
 %  training_numbers = {'2514_RMS.czi','2250_RMS.czi','2542_RMS.czi','3503_RMS.czi'};
-training_numbers = {'3509_RMS.czi'};
+training_numbers = {'2517_RMS.czi'};
 % training_numbers = {'2400_RMS.czi','2403_RMS.czi','2247_RMS.czi','3509_RMS.czi','2519_RMS.czi','2504_RMS.czi'};
  
 %     '2400_RMS.czi','3509_RMS.czi','2519_RMS.czi','2403_RMS.czi',...
@@ -18,7 +18,7 @@ training_numbers = {'3509_RMS.czi'};
 
 samples = training_numbers;
 set ='10x';
-% parpool()
+%parpool()
 
 resolution = 2;
 tileSize = [1000 1000];
@@ -32,6 +32,7 @@ for i = 1:length(samples)
     
     %         LabelMap = containers.Map('#ffff00','YellowLabels');
     LabelMap = containers.Map({'#00ff00','#00ffff','#0000ff','#000080'},{'lumen','wall','box1','box2'});
+%     LabelMap = containers.Map({'#00ff00'},{'lumen'});
     
     ExtractTilesPolyscope_all_resolutions(ImagePath, AnnoPath, PatchPath, LabelMap,tileSize, resolution)
 %     ExtractTilesPolyscope_20x(ImagePath, AnnoPath, PatchPath, LabelMap,tileSize, resolution)

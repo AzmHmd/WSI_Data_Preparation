@@ -10,6 +10,7 @@ for i0 = 1:length(res)
     rms_dir = dir(rootpath);
     
     for i = 1:length(rms_dir)
+        disp(rms_dir(i).name)
         if ~strcmp(rms_dir(i).name,'.') && ~strcmp(rms_dir(i).name,'..')
             if ~exist(fullfile(rms_dir(i).folder, rms_dir(i).name,'/img_box'),'dir')
                 disp(['organising sample ',rms_dir(i).name])

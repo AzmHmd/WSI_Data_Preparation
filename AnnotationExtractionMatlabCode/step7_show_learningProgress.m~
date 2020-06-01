@@ -3,8 +3,7 @@ clear all;
 rootprojects = dir('/home/azamhamidinekoo/Documents/projects/HE_vasculature_pix2pixHD_Azam/checkpoints/fold*');
 for rp = 1:length(rootprojects)
     project = rootprojects(rp).name;
-    mkdir(fullfile(rootprojects(rp).folder,rootprojects(rp).name,'learning_curve'));
-    savepath = fullfile(rootprojects(rp).folder,rootprojects(rp).name,'learning_curve');
+    mkdir(fullfile(rootprojects(rp).folder,'learning_curve'))
     f = fopen(fullfile(rootprojects(rp).folder,rootprojects(rp).name,'/loss_log.txt'),'r');
     fileline = fgetl(f);
     epoch_pre = 1;
@@ -41,7 +40,7 @@ for rp = 1:length(rootprojects)
         end
         fileline = fgetl(f);
     end
-    fig = figure;
+    figure;
     hold on;
     plot(process(:,1), process(:,2),'r')
     plot(process(:,1), process(:,3),'b')
@@ -50,6 +49,6 @@ for rp = 1:length(rootprojects)
     plot(process(:,1), process(:,6),'y')
     legend('G-GAN','G-GAN-Feat','G-VGG','D-real','D-fake')
     title(strrep(rootprojects(rp).name,'_','-'))
-    saveas(fig,[savepath,'/learningCurve.png'])
+    saveas(fig,[])
     close all
 end

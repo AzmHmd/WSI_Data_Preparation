@@ -64,7 +64,7 @@ if CreateBlanks
         mkdir(fullfile(PatchPath, labels{i}));
         mkdir(fullfile(strrep(PatchPath,'10x','1x'), labels{i}));
         mkdir(fullfile(strrep(PatchPath,'10x','20x'), labels{i}));
-        mkdir(fullfile(strrep(PatchPath,'10x','40x'), labels{i}));
+%         mkdir(fullfile(strrep(PatchPath,'10x','40x'), labels{i}));
         
         for x=0:(TileGrid(1)-1)
             for y=0:(TileGrid(2)-1)
@@ -107,7 +107,7 @@ for i=1:length(coords)
                 mkdir(patchFolder);
                 mkdir(strrep(patchFolder,'10x','1x'));
                 mkdir(strrep(patchFolder,'10x','20x'));
-                mkdir(strrep(patchFolder,'10x','40x'));
+                %mkdir(strrep(patchFolder,'10x','40x'));
             end
             
             if DaTile
@@ -126,7 +126,7 @@ for i=1:length(coords)
             end
             
             if ~isfile(imageTilePath) 
-%                tilePosition = tilePosition+[0 -50];
+%                 tilePosition = tilePosition+[0 -30];
                 tile1x = imread_wsi(ImagePath, 'ReductionLevel', 3, 'PixelRegion',...
                     {[tilePosition(1)/2+1 tilePosition(1)/2+currentTileSize(1)/2], [tilePosition(2)/2+1 tilePosition(2)/2+currentTileSize(2)/2]});
 %                 figure;imshow(tile1x)
@@ -142,10 +142,10 @@ for i=1:length(coords)
 %                 figure;imshow(tile20x)
                 imwrite(tile20x, strrep(imageTilePath,'10x','20x'));
                 
-                tile40x = imread_wsi(ImagePath, 'ReductionLevel', 0, 'PixelRegion',...
-                    {[4*tilePosition(1)+1 4*tilePosition(1)+4*currentTileSize(1)], [4*tilePosition(2)+1 4*tilePosition(2)+4*currentTileSize(2)]});
-%                 figure;imshow(tile40x)
-                imwrite(tile40x, strrep(imageTilePath,'10x','40x'));
+%                 tile40x = imread_wsi(ImagePath, 'ReductionLevel', 0, 'PixelRegion',...
+%                     {[4*tilePosition(1)+1 4*tilePosition(1)+4*currentTileSize(1)], [4*tilePosition(2)+1 4*tilePosition(2)+4*currentTileSize(2)]});
+% %                 figure;imshow(tile40x)
+%                 imwrite(tile40x, strrep(imageTilePath,'10x','40x'));
 %                  tilePosition = tilePosition+[0 50];
             end
             
@@ -168,11 +168,21 @@ for i=1:length(coords)
                 end
 
                 mask(annotationPosition(1, 1):annotationPosition(2, 1), annotationPosition(1, 2):annotationPosition(2, 2)) = max(mask(annotationPosition(1, 1):annotationPosition(2, 1), annotationPosition(1, 2):annotationPosition(2, 2)), subMask);
+                % to do initial test
+%                 figure;
+%                 BW = imbinarize(mask);
+%                 [Bpred,~] = bwboundaries(BW,'noholes');
+%                 imshow(tile10x)
+%                 hold on
+%                 for k = 1:length(Bpred)
+%                     boundary = Bpred{k};
+%                     plot(boundary(:,2), boundary(:,1), 'b', 'LineWidth', 1)
+%                 end
                 imwrite(mask, maskPath);
                 % Bilinear interpolation; the output pixel value is a weighted average of pixels in the nearest 2-by-2 neighborhood
                 imwrite(imresize(mask,.5,'bilinear'), strrep(maskPath,'10x','1x'));%
                 imwrite(imresize(mask,2,'bilinear'), strrep(maskPath,'10x','20x'));
-                imwrite(imresize(mask,4,'bilinear'), strrep(maskPath,'10x','40x'));
+%                 imwrite(imresize(mask,4,'bilinear'), strrep(maskPath,'10x','40x'));
 %             end
         end
     end
