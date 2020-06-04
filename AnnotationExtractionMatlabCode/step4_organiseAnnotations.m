@@ -3,7 +3,7 @@ clear; close all; clc;
 res = {'1x','10x','20x', '40x'};
 
 for i0 = 1:length(res)
-    rootpath = ['/home/azamhamidinekoo/Documents/dataset/RMS-dataset/Annotations/vasculature/',res{i0},'/'];
+    rootpath = ['/home/azamhamidinekoo/Documents/dataset/RMS-dataset/Annotations/vasculature/',res{i0},'/*'];
 %     savepath = ['/home/azamhamidinekoo/Documents/dataset/projects/vasculature/sets_annotation/training/',res{i0},'/'];
     
     display = 0;
